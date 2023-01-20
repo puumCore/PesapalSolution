@@ -25,9 +25,9 @@ The following describes how i tackled the above problem. Let's start with the En
 > Base url: <strong>http://localhost:8080/pesa-pal/problem3/api/v1</strong>.
 
 The following are the resources available from the base url:
-<ul>
-    <li>
-    **Providing a client to the server**
+<ol>
+   <li>
+      <strong>Providing a client to the server</strong>
     <p>For the server to accept the client, provide the client's name with the request <a href="http://localhost:8080/pesa-pal/problem3/api/v1/solution/register">/solution/register</a> as a POST request and add json body similar to the one shown below.</p>
     <code>curl --location --request POST 'http://localhost:8080/pesa-pal/problem3/api/v1/solution/register' \
         --header 'Content-Type: application/json' \
@@ -37,17 +37,15 @@ The following are the resources available from the base url:
     <p>However when you try to add an already existing client you will receive a Bad Request error as shown below.</p>
     <img src="https://user-images.githubusercontent.com/54445311/213678087-6998fab2-6990-415b-8819-6a3620e0e9c8.png"></img>
     </li>
-    
     <li>
-    **List clients on the server**
+    <strong>List clients on the server</strong>
     <p>To fetch list of active clients use <a href="http://localhost:8080/pesa-pal/problem3/api/v1/solution/clients">/solution/clients</a> as a GET request and with a json body as shown below.</p>
     <code>curl --location --request GET 'http://localhost:8080/pesa-pal/problem3/api/v1/solution/clients'</code>
     <p>On success you will get a response with OK http status and json array body with the to mean that it was a success otherwise you will get an exception with reason.</p>
     <img src="https://user-images.githubusercontent.com/54445311/213669054-f9e855b3-1778-428d-a2e4-afe9dee3c16e.png"></img>
     </li>
-    
     <li>
-    **Ping server**
+   <strong>Ping Server</strong>
     <p>The client is required to <strong>ping</strong> the server <strong>after every 60 seconds</strong> with <a href="http://localhost:8080/pesa-pal/problem3/api/v1/solution/online">/solution/online</a> as a POST request and with a json body as shown below.</p>
     <code>curl --location --request POST 'http://localhost:8080/pesa-pal/problem3/api/v1/solution/online' \
         --header 'Content-Type: application/json' \
@@ -57,9 +55,8 @@ The following are the resources available from the base url:
     <p>However when the target client doesn't exist you will receive a Not Found error as shown below.</p>
     <img src="https://user-images.githubusercontent.com/54445311/213680078-7be113fb-3cfa-44e0-bd83-a72ed15b8695.png"></img>
     </li>
-    
     <li>
-    **Execute commands**
+    <strong>Execute commands</strong>
     <p>The client is required to provide a command using <a href="http://localhost:8080/pesa-pal/problem3/api/v1/solution/cmd">/solution/cmd</a> as a POST request and with a json body as shown below.</p>
     <code>curl --location --request POST 'http://localhost:8080/pesa-pal/problem3/api/v1/solution/cmd' \
         --header 'Content-Type: application/json' \
@@ -85,25 +82,25 @@ The following are the resources available from the base url:
         </li>
     </ol>
     </li>
-    
-</ul>
+</ol>
 
 #### Code
-The following are code snipnnets for important functions in the application:
+Project directory structure:<br>
+<img src="https://user-images.githubusercontent.com/54445311/213704112-afed55c8-307c-42af-b927-b93260feec32.png"></img>
 
+The following are code snipnnets for important functions in the application:
+<strong></strong>
 <ol>
     <li>
     <strong>Service Class</strong>
     <br>
       https://github.com/puumCore/PesapalSolution/blob/457fe5ffe0d095c098142b3161dd4abd170e8be9/src/main/java/com/pesapal/problem3/PesapalSolution/Assistant.java#L18-L115
     </li>
-
     <li>
     <strong>Scheduler Class</strong>
     <br>
     https://github.com/puumCore/PesapalSolution/blob/457fe5ffe0d095c098142b3161dd4abd170e8be9/src/main/java/com/pesapal/problem3/PesapalSolution/Daemon.java#L18-L32
     </li>
-
     <li>
     <strong>Controller Class</strong>
     <br>
