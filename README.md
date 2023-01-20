@@ -106,5 +106,29 @@ The following are code snipnnets for important functions in the application:
     <br>
     https://github.com/puumCore/PesapalSolution/blob/457fe5ffe0d095c098142b3161dd4abd170e8be9/src/main/java/com/pesapal/problem3/PesapalSolution/Controller.java#L21-L80
     </li>
-   
+</ol>
+
+#### Output
+<ol>
+   <li>
+      <strong>Start up output</strong>
+      <br>
+      <img src="https://user-images.githubusercontent.com/54445311/213705539-04f9c58f-92fd-42f5-92bc-dcab49b67516.png"></img>
+   </li>
+   <li>
+      <strong>On Adding new client</strong>
+      <br>
+      <img src="https://user-images.githubusercontent.com/54445311/213706115-4fe6a423-d601-40fa-b411-83185f79f012.png"></img>
+   </li>
+   <li>
+      <strong>On Disconnecting client after 60 seconds</strong>
+      <br>
+      <img src="https://user-images.githubusercontent.com/54445311/213706427-4824fc6e-eb52-4d12-a42f-27f8917ad9fd.png"></img>
+   </li>
+    <li>
+      <strong>On Executing Client Command after a client of a higher rank has provided a "bid" for the command</strong>
+      <br>
+      <img src="https://user-images.githubusercontent.com/54445311/213707126-9debf49c-0752-46af-aa79-1ddc61fc789f.png"></img>
+   </li>
+
 </ol>
