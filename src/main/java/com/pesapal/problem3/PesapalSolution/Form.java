@@ -13,7 +13,7 @@ import java.util.StringJoiner;
 
 public abstract class Form {
 
-    public record User(@org.springframework.lang.NonNull String client) {
+    public record User(@NonNull String client) {
 
         @Override
         public String toString() {
