@@ -85,12 +85,21 @@ The following are the resources available from the base url:
 </ol>
 
 #### Code
-Project directory structure:<br>
+
+Project directory structure:
+
 <img src="https://user-images.githubusercontent.com/54445311/213704112-afed55c8-307c-42af-b927-b93260feec32.png"></img>
 
+> To effectively solve the larger part of the problem, I choose to use the <strong>Queue<?></strong> datatype becuse of its elastic ability on the items it holds. Therefore items in the Queue automatically adjusts to the FIFO order.
+
 The following are code snipnnets for important functions in the application:
-<strong></strong>
+
 <ol>
+    <li>
+    <strong>Service Function Class</strong>
+    <br>
+      https://github.com/puumCore/PesapalSolution/blob/7f39cff518231b09912047794250265d53a701f5/src/main/java/com/pesapal/problem3/PesapalSolution/Functions.java#L15-L70
+    </li>
     <li>
     <strong>Service Class</strong>
     <br>
